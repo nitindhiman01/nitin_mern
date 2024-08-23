@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+
+<div class="login-screen">
+  <div class="login-container">
+      <h1>Update User</h1>
+      <form class="form-class" action="/updateuser/<%= userinfo._id %>" method="PUT">
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 margin-check">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn login-btn">Submit</button>
+      </form>
+  </div>
+</div>
